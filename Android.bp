@@ -4,13 +4,8 @@
 
 soong_namespace {
     imports: [
-        "device/nubia/tiro",
+        "vendor/nubia/sm8650-common",
         "hardware/qcom-caf/sm8650",
-        "hardware/qcom-caf/wlan",
-        "vendor/qcom/opensource/commonsys/display",
-        "vendor/qcom/opensource/commonsys-intf/display",
-        "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/display",
     ],
 }
 
@@ -2819,6 +2814,17 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+}
+
+android_app_import {
+    name: "NubiaCamera",
+    owner: "nubia",
+    apk: "proprietary/system/priv-app/NubiaCamera/NubiaCamera.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
 }
 
 prebuilt_etc_xml {

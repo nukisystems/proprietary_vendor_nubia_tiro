@@ -15,6 +15,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/beautiful_app/preference_beautify0.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify0.json \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/beautiful_app/preference_beautify1.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify1.json \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/beautiful_app/preference_beautify2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify2.json \
+    vendor/nubia/tiro/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/debug/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/debug/camxoverridesettings.txt \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/dualcam_cali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_cali.bin \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/icon/water_mark_drawable_black.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black.argb \
@@ -24,11 +25,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/mfnr_network_denoise_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config.xml \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/mfnr_network_denoise_config_night.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config_night.xml \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/mfnr_network_denoise_config_renwen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config_renwen.xml \
+    vendor/nubia/tiro/proprietary/vendor/etc/camera/mfnr_network_denoise_config_underdisplay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mfnr_network_denoise_config_underdisplay.xml \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/widelencalc_cali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/widelencalc_cali.bin \
-    vendor/nubia/tiro/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/nubia/tiro/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/nubia/tiro/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/nubia/tiro/proprietary/vendor/etc/media_profiles_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pineapple.xml \
     vendor/nubia/tiro/proprietary/vendor/etc/sensors/config/json.lst:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/json.lst \
     vendor/nubia/tiro/proprietary/vendor/etc/sensors/config/lanai_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lanai_ak991x_0.json \
     vendor/nubia/tiro/proprietary/vendor/etc/sensors/config/lanai_aw96103_0_sar_register_a.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lanai_aw96103_0_sar_register_a.json \
@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/tiro/proprietary/vendor/etc/sensors/config/lanai_lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lanai_lsm6dso_0.json \
     vendor/nubia/tiro/proprietary/vendor/etc/sensors/config/lanai_mtp_ak991x_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lanai_mtp_ak991x_0.json \
     vendor/nubia/tiro/proprietary/vendor/etc/st54l_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/st54l_conf.txt \
+    vendor/nubia/tiro/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/nubia/tiro/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
     vendor/nubia/tiro/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
     vendor/nubia/tiro/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
@@ -58,6 +59,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/tiro/proprietary/vendor/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/ois_dw9784_tiro.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_dw9784_tiro.prog \
     vendor/nubia/tiro/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
+    vendor/nubia/tiro/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
     vendor/nubia/tiro/proprietary/vendor/lib64/camera/com.zte.sensormodule.zte_gc02m1_tiro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.zte_gc02m1_tiro.bin \
     vendor/nubia/tiro/proprietary/vendor/lib64/camera/com.zte.sensormodule.zte_ov16a1q_tiro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.zte_ov16a1q_tiro.bin \
     vendor/nubia/tiro/proprietary/vendor/lib64/camera/com.zte.sensormodule.zte_ov16e1q_tiro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.zte_ov16e1q_tiro.bin \
@@ -134,4 +136,5 @@ PRODUCT_PACKAGES += \
     libchifeature2 \
     libgf_hal \
     sensors.qsh \
+    NubiaCamera \
     android.hardware.secure_element.xml
