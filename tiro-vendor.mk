@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/tiro/proprietary/vendor/firmware/CAMERA_ICP.b20:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b20 \
     vendor/nubia/tiro/proprietary/vendor/firmware/CAMERA_ICP.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mbn \
     vendor/nubia/tiro/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw22xxx_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw22xxx_fw.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/aw882xx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw882xx_acf.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/aw9620x_bt_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_bt_0.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/aw9620x_bt_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_bt_1.bin \
@@ -50,14 +51,119 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/tiro/proprietary/vendor/firmware/aw9620x_fw_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_fw_1.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/aw9620x_reg_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_reg_0.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/aw9620x_reg_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw9620x_reg_1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_70.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_70.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_71.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_71.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_72.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_72.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_73.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_73.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_74.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_74.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_75.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_75.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_76.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_76.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_77.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_77.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_78.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_78.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_79.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_79.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_7a.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_7a.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_7b.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_7b.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_7c.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_7c.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_7d.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_7d.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_7e.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_7e.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_7f.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_7f.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_80.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_80.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_81.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_81.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_82.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_82.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_83.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_83.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_84.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_84.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_85.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_85.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_86.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_86.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_87.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_87.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_88.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_88.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_89.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_89.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_8a.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_8a.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_8b.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_8b.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_8c.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_8c.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_8d.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_8d.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_8e.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_8e.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_8f.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_8f.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_90.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_90.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_91.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_91.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_92.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_92.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_93.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_93.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_94.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_94.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_95.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_95.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_96.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_96.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_97.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_97.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_98.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_98.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_99.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_99.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_9a.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_9a.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_9b.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_9b.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_9c.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_9c.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_9d.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_9d.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_9e.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_9e.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_9f.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_9f.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a2.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a3.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a4.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a5.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a6.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_a7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_a7.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b2.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b3.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b4.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b5.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b6.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_b7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_b7.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c2.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c3.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c4.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c5.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c6.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_c7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_c7.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d2.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d3.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d4.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d5.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d6.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_d7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_d7.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e2.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e3.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e4.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e5.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e6.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_e7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_e7.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f2.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f3.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f4.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f5.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f6.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f6.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/aw_cfg_f7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw_cfg_f7.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/evass.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.b19 \
     vendor/nubia/tiro/proprietary/vendor/firmware/evass.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mbn \
     vendor/nubia/tiro/proprietary/vendor/firmware/evass.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evass.mdt \
+    vendor/nubia/tiro/proprietary/vendor/firmware/fan_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fan_led_off.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/fan_led_on.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fan_led_on.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/gen70900_zap.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/gen70900_zap.mbn \
     vendor/nubia/tiro/proprietary/vendor/firmware/goodix_cfg_group_9916r.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_9916r.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/goodix_firmware_9916r.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_9916r.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/haptic_ram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/haptic_ram.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/m_led_off.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/m_led_off.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/nubia_all_rgb_blue.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nubia_all_rgb_blue.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/nubia_all_rgb_green.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nubia_all_rgb_green.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/nubia_all_rgb_red.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nubia_all_rgb_red.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/ois_dw9784_tiro.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_dw9784_tiro.prog \
+    vendor/nubia/tiro/proprietary/vendor/firmware/touch_game0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_game0.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/touch_game1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_game1.bin \
+    vendor/nubia/tiro/proprietary/vendor/firmware/touch_game2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/touch_game2.bin \
     vendor/nubia/tiro/proprietary/vendor/firmware/vpu33_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v.mbn \
     vendor/nubia/tiro/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
     vendor/nubia/tiro/proprietary/vendor/lib64/camera/com.zte.sensormodule.zte_gc02m1_tiro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.zte_gc02m1_tiro.bin \
