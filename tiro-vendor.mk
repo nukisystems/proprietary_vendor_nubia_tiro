@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nubia/tiro
 
 PRODUCT_COPY_FILES += \
+    vendor/nubia/tiro/proprietary/vendor/etc/aac_richtap.config:$(TARGET_COPY_OUT_VENDOR)/etc/aac_richtap.config \
     vendor/nubia/tiro/proprietary/vendor/etc/acdbdata/pineapple_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_mtp/MTP_acdb_cal.acdb \
     vendor/nubia/tiro/proprietary/vendor/etc/acdbdata/pineapple_mtp/MTP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_mtp/MTP_workspaceFileXml.qwsp \
     vendor/nubia/tiro/proprietary/vendor/etc/camera/adaptive_config/mfnr_network_denoise_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/adaptive_config/mfnr_network_denoise_config.xml \
